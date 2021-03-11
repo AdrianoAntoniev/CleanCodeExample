@@ -28,6 +28,7 @@
 		B91ABFD825FA744A008C921E /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFD725FA744A008C921E /* WelcomeRouter.swift */; };
 		B91ABFDD25FA7457008C921E /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFDC25FA7457008C921E /* WelcomeModel.swift */; };
 		B91ABFE225FA7566008C921E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFE125FA7566008C921E /* LoginModel.swift */; };
+		B91ABFEE25FA7789008C921E /* WelcomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFED25FA7789008C921E /* WelcomeWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B91ABFD725FA744A008C921E /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		B91ABFDC25FA7457008C921E /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
 		B91ABFE125FA7566008C921E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		B91ABFED25FA7789008C921E /* WelcomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +160,7 @@
 		B91ABF9225FA71D8008C921E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				B91ABF9425FA7209008C921E /* ShowWelcomeScreen */,
+				B91ABF9425FA7209008C921E /* Welcome */,
 				B91ABF9325FA71F9008C921E /* LogIn */,
 			);
 			path = Scenes;
@@ -178,7 +180,7 @@
 			path = LogIn;
 			sourceTree = "<group>";
 		};
-		B91ABF9425FA7209008C921E /* ShowWelcomeScreen */ = {
+		B91ABF9425FA7209008C921E /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				B91ABFD225FA743D008C921E /* WelcomeConfigurator.swift */,
@@ -187,8 +189,9 @@
 				B91ABFCD25FA742B008C921E /* WelcomePresenter.swift */,
 				B91ABFD725FA744A008C921E /* WelcomeRouter.swift */,
 				B91ABFC325FA7394008C921E /* WelcomeViewController.swift */,
+				B91ABFED25FA7789008C921E /* WelcomeWorker.swift */,
 			);
-			path = ShowWelcomeScreen;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +333,7 @@
 				B91ABFB025FA731C008C921E /* LoginPresenter.swift in Sources */,
 				B91ABF5D25FA69CA008C921E /* AppDelegate.swift in Sources */,
 				B91ABFD325FA743D008C921E /* WelcomeConfigurator.swift in Sources */,
+				B91ABFEE25FA7789008C921E /* WelcomeWorker.swift in Sources */,
 				B91ABFA625FA72F8008C921E /* LoginInteractor.swift in Sources */,
 				B91ABFDD25FA7457008C921E /* WelcomeModel.swift in Sources */,
 				B91ABFBA25FA733E008C921E /* LoginRouter.swift in Sources */,

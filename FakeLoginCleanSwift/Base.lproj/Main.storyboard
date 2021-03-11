@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login -->
+        <!--Fake Login Clean Swift-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Login View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,6 +44,9 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.67267137769999996" green="0.71641671659999995" blue="0.77732437850000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZ8-4S-GHq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -60,8 +63,10 @@
                             <constraint firstItem="KFS-Jh-aUa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zgG-2n-kna"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login " id="3ZA-9S-d37"/>
+                    <navigationItem key="navigationItem" title="Fake Login Clean Swift" id="3ZA-9S-d37"/>
                     <connections>
+                        <outlet property="passwordTextField" destination="sGs-lb-Yf7" id="kDi-VX-fi0"/>
+                        <outlet property="userTextField" destination="KFS-Jh-aUa" id="R9H-NU-Se0"/>
                         <segue destination="lNu-MO-hh7" kind="show" id="tnP-yN-OXU"/>
                     </connections>
                 </viewController>
@@ -69,24 +74,22 @@
             </objects>
             <point key="canvasLocation" x="1026" y="81"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome-->
         <scene sceneID="Ret-DG-CP9">
             <objects>
-                <viewController id="lNu-MO-hh7" sceneMemberID="viewController">
+                <viewController id="lNu-MO-hh7" userLabel="Welcome" customClass="WelcomeViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yA2-tN-ig1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SEJA BEM VINDO!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCv-P5-WAB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEJA BEM VINDO!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCv-P5-WAB">
                                 <rect key="frame" x="137" y="287" width="140" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSS-hN-jBh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSS-hN-jBh">
                                 <rect key="frame" x="190" y="377" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,17 +97,26 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4pS-a6-jOu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4pS-a6-jOu" firstAttribute="bottom" secondItem="ZSS-hN-jBh" secondAttribute="bottom" constant="464" id="Bu6-98-brb"/>
+                            <constraint firstItem="ZSS-hN-jBh" firstAttribute="top" secondItem="UCv-P5-WAB" secondAttribute="bottom" constant="69" id="Wid-0C-f2F"/>
+                            <constraint firstItem="ZSS-hN-jBh" firstAttribute="centerX" secondItem="UCv-P5-WAB" secondAttribute="centerX" id="q8i-ba-aUt"/>
+                            <constraint firstItem="ZSS-hN-jBh" firstAttribute="centerX" secondItem="yA2-tN-ig1" secondAttribute="centerX" id="ted-sb-tUR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mNT-5x-TDd"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="ZSS-hN-jBh" id="WF7-RL-cg3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JNN-hN-zij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1954" y="80"/>
         </scene>
-        <!--Login -->
+        <!--Navigation View-->
         <scene sceneID="VYP-OS-OZ6">
             <objects>
-                <navigationController title="Login " automaticallyAdjustsScrollViewInsets="NO" id="VRf-Cx-eFf" sceneMemberID="viewController">
+                <navigationController title="Navigation View" automaticallyAdjustsScrollViewInsets="NO" id="VRf-Cx-eFf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="woX-3R-ijM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
