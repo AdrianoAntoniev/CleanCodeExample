@@ -9,13 +9,25 @@
 /* Begin PBXBuildFile section */
 		B91ABF5D25FA69CA008C921E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABF5C25FA69CA008C921E /* AppDelegate.swift */; };
 		B91ABF5F25FA69CA008C921E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABF5E25FA69CA008C921E /* SceneDelegate.swift */; };
-		B91ABF6125FA69CA008C921E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABF6025FA69CA008C921E /* ViewController.swift */; };
 		B91ABF6425FA69CA008C921E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91ABF6225FA69CA008C921E /* Main.storyboard */; };
 		B91ABF6725FA69CA008C921E /* FakeLoginCleanSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B91ABF6525FA69CA008C921E /* FakeLoginCleanSwift.xcdatamodeld */; };
 		B91ABF6925FA69CF008C921E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91ABF6825FA69CF008C921E /* Assets.xcassets */; };
 		B91ABF6C25FA69CF008C921E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91ABF6A25FA69CF008C921E /* LaunchScreen.storyboard */; };
 		B91ABF7725FA69D0008C921E /* FakeLoginCleanSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABF7625FA69D0008C921E /* FakeLoginCleanSwiftTests.swift */; };
 		B91ABF8225FA69D0008C921E /* FakeLoginCleanSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABF8125FA69D0008C921E /* FakeLoginCleanSwiftUITests.swift */; };
+		B91ABFA125FA72DA008C921E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFA025FA72DA008C921E /* LoginViewController.swift */; };
+		B91ABFA625FA72F8008C921E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFA525FA72F8008C921E /* LoginInteractor.swift */; };
+		B91ABFAB25FA7310008C921E /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFAA25FA7310008C921E /* LoginWorker.swift */; };
+		B91ABFB025FA731C008C921E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFAF25FA731C008C921E /* LoginPresenter.swift */; };
+		B91ABFB525FA732F008C921E /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFB425FA732F008C921E /* LoginConfigurator.swift */; };
+		B91ABFBA25FA733E008C921E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFB925FA733E008C921E /* LoginRouter.swift */; };
+		B91ABFC425FA7394008C921E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFC325FA7394008C921E /* WelcomeViewController.swift */; };
+		B91ABFC925FA741D008C921E /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFC825FA741D008C921E /* WelcomeInteractor.swift */; };
+		B91ABFCE25FA742B008C921E /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFCD25FA742B008C921E /* WelcomePresenter.swift */; };
+		B91ABFD325FA743D008C921E /* WelcomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFD225FA743D008C921E /* WelcomeConfigurator.swift */; };
+		B91ABFD825FA744A008C921E /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFD725FA744A008C921E /* WelcomeRouter.swift */; };
+		B91ABFDD25FA7457008C921E /* WelcomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFDC25FA7457008C921E /* WelcomeModel.swift */; };
+		B91ABFE225FA7566008C921E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ABFE125FA7566008C921E /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +51,6 @@
 		B91ABF5925FA69CA008C921E /* FakeLoginCleanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeLoginCleanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91ABF5C25FA69CA008C921E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B91ABF5E25FA69CA008C921E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B91ABF6025FA69CA008C921E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B91ABF6325FA69CA008C921E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B91ABF6625FA69CA008C921E /* FakeLoginCleanSwift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FakeLoginCleanSwift.xcdatamodel; sourceTree = "<group>"; };
 		B91ABF6825FA69CF008C921E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +62,19 @@
 		B91ABF7D25FA69D0008C921E /* FakeLoginCleanSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FakeLoginCleanSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91ABF8125FA69D0008C921E /* FakeLoginCleanSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLoginCleanSwiftUITests.swift; sourceTree = "<group>"; };
 		B91ABF8325FA69D0008C921E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B91ABFA025FA72DA008C921E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B91ABFA525FA72F8008C921E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		B91ABFAA25FA7310008C921E /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		B91ABFAF25FA731C008C921E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		B91ABFB425FA732F008C921E /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		B91ABFB925FA733E008C921E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		B91ABFC325FA7394008C921E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B91ABFC825FA741D008C921E /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
+		B91ABFCD25FA742B008C921E /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		B91ABFD225FA743D008C921E /* WelcomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeConfigurator.swift; sourceTree = "<group>"; };
+		B91ABFD725FA744A008C921E /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
+		B91ABFDC25FA7457008C921E /* WelcomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModel.swift; sourceTree = "<group>"; };
+		B91ABFE125FA7566008C921E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +125,9 @@
 		B91ABF5B25FA69CA008C921E /* FakeLoginCleanSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B91ABF9225FA71D8008C921E /* Scenes */,
 				B91ABF5C25FA69CA008C921E /* AppDelegate.swift */,
 				B91ABF5E25FA69CA008C921E /* SceneDelegate.swift */,
-				B91ABF6025FA69CA008C921E /* ViewController.swift */,
 				B91ABF6225FA69CA008C921E /* Main.storyboard */,
 				B91ABF6825FA69CF008C921E /* Assets.xcassets */,
 				B91ABF6A25FA69CF008C921E /* LaunchScreen.storyboard */,
@@ -129,6 +153,42 @@
 				B91ABF8325FA69D0008C921E /* Info.plist */,
 			);
 			path = FakeLoginCleanSwiftUITests;
+			sourceTree = "<group>";
+		};
+		B91ABF9225FA71D8008C921E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B91ABF9425FA7209008C921E /* ShowWelcomeScreen */,
+				B91ABF9325FA71F9008C921E /* LogIn */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B91ABF9325FA71F9008C921E /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				B91ABFB425FA732F008C921E /* LoginConfigurator.swift */,
+				B91ABFA525FA72F8008C921E /* LoginInteractor.swift */,
+				B91ABFE125FA7566008C921E /* LoginModel.swift */,
+				B91ABFAF25FA731C008C921E /* LoginPresenter.swift */,
+				B91ABFB925FA733E008C921E /* LoginRouter.swift */,
+				B91ABFA025FA72DA008C921E /* LoginViewController.swift */,
+				B91ABFAA25FA7310008C921E /* LoginWorker.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		B91ABF9425FA7209008C921E /* ShowWelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B91ABFD225FA743D008C921E /* WelcomeConfigurator.swift */,
+				B91ABFC825FA741D008C921E /* WelcomeInteractor.swift */,
+				B91ABFDC25FA7457008C921E /* WelcomeModel.swift */,
+				B91ABFCD25FA742B008C921E /* WelcomePresenter.swift */,
+				B91ABFD725FA744A008C921E /* WelcomeRouter.swift */,
+				B91ABFC325FA7394008C921E /* WelcomeViewController.swift */,
+			);
+			path = ShowWelcomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +321,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B91ABFA125FA72DA008C921E /* LoginViewController.swift in Sources */,
+				B91ABFCE25FA742B008C921E /* WelcomePresenter.swift in Sources */,
+				B91ABFC425FA7394008C921E /* WelcomeViewController.swift in Sources */,
+				B91ABFC925FA741D008C921E /* WelcomeInteractor.swift in Sources */,
 				B91ABF6725FA69CA008C921E /* FakeLoginCleanSwift.xcdatamodeld in Sources */,
-				B91ABF6125FA69CA008C921E /* ViewController.swift in Sources */,
+				B91ABFE225FA7566008C921E /* LoginModel.swift in Sources */,
+				B91ABFB025FA731C008C921E /* LoginPresenter.swift in Sources */,
 				B91ABF5D25FA69CA008C921E /* AppDelegate.swift in Sources */,
+				B91ABFD325FA743D008C921E /* WelcomeConfigurator.swift in Sources */,
+				B91ABFA625FA72F8008C921E /* LoginInteractor.swift in Sources */,
+				B91ABFDD25FA7457008C921E /* WelcomeModel.swift in Sources */,
+				B91ABFBA25FA733E008C921E /* LoginRouter.swift in Sources */,
 				B91ABF5F25FA69CA008C921E /* SceneDelegate.swift in Sources */,
+				B91ABFD825FA744A008C921E /* WelcomeRouter.swift in Sources */,
+				B91ABFB525FA732F008C921E /* LoginConfigurator.swift in Sources */,
+				B91ABFAB25FA7310008C921E /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
