@@ -16,7 +16,6 @@ protocol WelcomeDataStore {
 
 class WelcomeInteractor: WelcomeBusinessLogic, WelcomeDataStore {
     var user: User!
-    
     var presenter: WelcomePresenter?
     
     func sayWelcome(request: Welcome.Welcome.Request) {
