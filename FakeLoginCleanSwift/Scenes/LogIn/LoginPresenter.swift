@@ -15,10 +15,9 @@ class LoginPresenter: LoginPresentationLogic {
     weak var viewController: LoginDisplayLogic?
     
     func presentWelcomeMessage(response: Login.Login.Response) {
-        let userWithUppercasedName = User(username: (response.user?.username.uppercased())!,
-                                          password: response.user!.password)
+        let user = User(username: response.user!.username, password: response.user!.password)
         
-        let viewModel = Login.Login.ViewModel(user: userWithUppercasedName)
+        let viewModel = Login.Login.ViewModel(user: user)
         viewController?.displayLoginSuccessful(viewModel: viewModel)
     }    
 }

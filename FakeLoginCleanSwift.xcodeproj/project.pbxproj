@@ -186,12 +186,12 @@
 		B91ABF9425FA7209008C921E /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				B91ABFD225FA743D008C921E /* WelcomeConfigurator.swift */,
-				B91ABFC825FA741D008C921E /* WelcomeInteractor.swift */,
-				B91ABFDC25FA7457008C921E /* WelcomeModel.swift */,
-				B91ABFCD25FA742B008C921E /* WelcomePresenter.swift */,
-				B91ABFD725FA744A008C921E /* WelcomeRouter.swift */,
 				B91ABFC325FA7394008C921E /* WelcomeViewController.swift */,
+				B91ABFC825FA741D008C921E /* WelcomeInteractor.swift */,
+				B91ABFCD25FA742B008C921E /* WelcomePresenter.swift */,
+				B91ABFD225FA743D008C921E /* WelcomeConfigurator.swift */,
+				B91ABFDC25FA7457008C921E /* WelcomeModel.swift */,
+				B91ABFD725FA744A008C921E /* WelcomeRouter.swift */,
 				B91ABFED25FA7789008C921E /* WelcomeWorker.swift */,
 			);
 			path = Welcome;

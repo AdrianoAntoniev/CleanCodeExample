@@ -11,7 +11,7 @@
         <!--Fake Login Clean Swift-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Login View">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,17 +67,17 @@
                     <connections>
                         <outlet property="passwordTextField" destination="sGs-lb-Yf7" id="kDi-VX-fi0"/>
                         <outlet property="userTextField" destination="KFS-Jh-aUa" id="R9H-NU-Se0"/>
-                        <segue destination="lNu-MO-hh7" kind="show" id="tnP-yN-OXU"/>
+                        <segue destination="lNu-MO-hh7" kind="show" identifier="Welcome" id="tnP-yN-OXU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1026" y="81"/>
         </scene>
-        <!--Welcome-->
+        <!--WelcomeViewController-->
         <scene sceneID="Ret-DG-CP9">
             <objects>
-                <viewController id="lNu-MO-hh7" userLabel="Welcome" customClass="WelcomeViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeViewController" id="lNu-MO-hh7" userLabel="WelcomeViewController" customClass="WelcomeViewController" customModule="FakeLoginCleanSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yA2-tN-ig1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

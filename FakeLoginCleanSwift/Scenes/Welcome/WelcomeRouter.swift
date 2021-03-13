@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+protocol WelcomeRoutingLogic {
+    
+}
+
+protocol ShowWelcomeUserDataPassing {
+    var dataStore: WelcomeDataStore? { get }
+}
+
+class WelcomeRouter: NSObject, WelcomeRoutingLogic, ShowWelcomeUserDataPassing {
+    var dataStore: WelcomeDataStore?    
+    var viewController: WelcomeDisplayLogic?        
+}
+
